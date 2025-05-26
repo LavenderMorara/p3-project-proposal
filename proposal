@@ -44,4 +44,3 @@ Edit
 │   ├── debug.py              # Testing during dev
 │   ├── seed.py               # Seed DB with guests and events
 │   └── helper.py             # CRUD and logic functions
-Deadline
