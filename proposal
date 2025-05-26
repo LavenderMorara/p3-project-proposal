@@ -1,0 +1,47 @@
+1. Name of the Project
+Event Guest Manager
+
+2. Description
+Event Guest Manager is a console-based Python application that helps event organizers register events and manage guest lists. Guests can RSVP to multiple events, and each event can have multiple guests — making this a many-to-many relationship. The system uses SQLAlchemy to handle database operations and follows the required structure.
+
+3. Models/Classes (Many-to-Many)
+✅ Relationships:
+Event (id, title, location, date)
+
+Guest (id, name, email)
+
+RSVP (id, event_id, guest_id, status)
+
+💡 Functionality:
+Add new events
+
+Register guests
+
+RSVP guests to events
+
+View:
+
+Guest lists per event
+
+Events a guest is attending
+
+RSVP status (Yes/No/Maybe)
+
+4. Project Structure (based on your whiteboard)
+csharp
+Copy
+Edit
+├── Pipfile
+├── Pipfile.lock
+├── README.md
+├── lily/
+│   ├── models/
+│   │   ├── __init__.py       # DB connection
+│   │   ├── guest.py          # Guest model
+│   │   ├── event.py          # Event model
+│   │   └── rsvp.py           # RSVP join model
+│   ├── cli.py                # For user interaction
+│   ├── debug.py              # Testing during dev
+│   ├── seed.py               # Seed DB with guests and events
+│   └── helper.py             # CRUD and logic functions
+Deadline
